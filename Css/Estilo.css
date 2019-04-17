@@ -1,0 +1,201 @@
+#Principal{
+	width: 1250px;
+	height: auto; overflow: hidden;
+	border: 0px solid #000;
+	margin: auto;
+}
+
+body{
+	background: #e6e6fa;
+}
+
+header{
+	width: 1250px;
+	height: 100px;
+	border: 0px solid #000;
+}
+
+#Logo{
+	width: 300px;
+	height: 100px;
+	border: 0px solid #000;
+	float: left;
+}
+
+.Titulo{
+	margin-top: 25px;
+	font-size: 30px;
+}
+
+.Sub-titulo{
+	font-size: 14px;
+	margin-top: -20px;
+
+}
+
+.Menu{
+	width: 530px;
+	height: 40px;
+	border: 1px solid #ccc;
+	float: right;
+	margin-top: 40px;
+	background: #005699;
+}
+
+.Menu ul{
+}
+
+.Menu ul li{
+	position: relative;
+	list-style: none;
+	float: left;
+}
+
+.Menu ul li a{
+	text-decoration: none;
+	padding: 10px 15px;
+	border: 0px solid #ccc;
+	color: #fff;
+}
+
+.Menu ul li a:hover{
+	background: #fff;
+	color: #006699;
+	transition: background 1s, color 1s;
+
+}
+
+#Slide{
+	margin-top: -5px;
+	width: 1250px;
+	height: 400px; 
+}
+
+#Categorias{
+	width: 1250px;
+	height: auto; overflow: hidden;
+	border: 0px solid;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.Uno{
+	width: 398px;
+	height: auto; overflow: hidden;
+	border: 1px solid #ccc;
+	float: left;
+	padding: 5px;
+	text-align: center;
+	color: #0000ff;
+}
+
+.Parrafo{
+	color: #696969;
+	text-align: justify;
+
+}
+
+.dos{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.Leer-mas{
+	text-decoration: none;
+	border: 1px solid #006699;
+	padding: 10px 20px 10px 20px;
+	margin: 10px;
+}
+
+.Leer-mas:hover{
+	background: #006699;
+	color: #fff;
+	transition: background 1s, color 1s;
+}
+
+#Info{
+	width: 1250px;
+	height: auto; overflow: hidden;
+	border: 0px solid #c0c0c0;
+	margin-top: 10px;
+}
+
+#Info h1{
+	text-align: center;
+}
+
+#Infocurso{
+	width: 648px;
+	height: auto; overflow: hidden;
+	border: 1px solid #ccc;
+	float: left;
+	padding: 5px;
+	color: #0000ff;
+}
+
+.img{
+	margin-right:7px;
+	margin-bottom: 7px; 
+}
+
+#Video{
+	width: 588px;
+	height: auto; overflow: hidden; 
+	border: 1px solid #ccc;
+	float: right;
+}
+
+#Video p{
+	color: #d3d3d3;
+	font-size: 9px;
+}
+
+footer{
+	width: 1250px;
+	height: 100px;
+	text-align: center;
+}
+
+#footer p{
+	width: 500px;
+}
+
+#Temas{
+	width: 1250px;
+	height: auto; overflow: hidden;
+	border: 0px solid;
+	margin-top: 15px;
+	text-align: center;
+}
+
+.Item1{
+	color: #0000ff;
+	text-align: center;
+}
+
+.Multim{
+	width: 750px;
+	height: auto; overflow: hidden;
+	float: center;
+}
+
+.Sub-menu{
+	position: absolute;
+	background: #006699;
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1s;
+}
+
+.Sub-menu li a{
+	display: block;
+	padding: 10px 15px;
+	color: #fff;
+	text-decoration: none;
+}
+
+.Menu li:hover .Sub-menu{
+	visibility: visible;
+	opacity: 1;
+}
