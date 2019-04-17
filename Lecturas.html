@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Lecturas</title>
+	<link rel="stylesheet" type="text/css" href="Css/Estilo.css">
+</head>
+<body>
+   <div id="Principal">
+       <header>
+       	    <div id="Logo">
+       	    <h2 class="Titulo">Lecturas</h2>
+       	    <p class="Sub-titulo">Herramientas ETL</p>	
+       	    </div>
+
+       	    <nav class="Menu">
+    			<ul>
+    				<li class="Actual"><a href="Index.html">Inicio</a></li>
+    				<li><a href="Lecturas.html">Lecturas</a></li>
+    				<li><a href="">Multimedia</a>
+                        <ul class="Sub-menu">
+                            <li><a href="Multimedia.html">Multimedia 1</a></li>
+                            <li><a href="Multimedia1.html">Multimedia 2</a></li>
+                        </ul>
+                    </li>
+    				<li><a href="Actividades.html">Actividades</a>
+                        <ul class="Sub-menu">
+                            <li><a href="">Servicio1</a></li>
+                            <li><a href="">Servicio2</a></li>
+                            <li><a href="">Servicio3</a></li>
+                        </ul>
+                    </li>
+    				<li><a href="Autores.html">Autores</a></li>
+    			</ul>
+    		</nav>
+       </header>
+
+       <section id="slide">
+            <img src="Img/Log.png" width="1250" height="300">
+       </section>
+
+       <section id="Temas">
+           <section class="Item1">
+           <h2>Herramientas ETL</h2>
+           <img src="Img/Etl.png">
+           	<h2>Definición.</h2>
+           	<p class="Parrafo">
+           		ETL son las siglas en inglés de Extraer, Transformar y Cargar (Extract, Transform and Load). Es el proceso 
+           		que permite a las organizaciones mover datos desde múltiples fuentes, reformatearlos y limpiarlos, y 
+           		cargarlos en otra base de datos, data mart, o data warehouse para analizar, o en otro sistema operacional para apoyar un proceso de negocio.
+           		<br><br>
+				Los procesos ETL también se pueden utilizar para la integración con sistemas heredados 
+				(aplicaciones antiguas existentes en las organizaciones que se han de integrar con los nuevos aplicativos, 
+				por ejemplo, ERP´s. La tecnología utilizada en dichas aplicaciones puede hacer dificil la integración con los nuevos programas).
+				<p>
+				   (Tomado de:http://www.dataprix.com/blogs/respinosamilla/herramientas-etl-que-son-para-que-valen-productos-mas-conocidos-etl-s-open-sour)
+				</p>
+           	</p>	
+           </section>
+           <section class="Item1">
+           	<h2>Función.</h2>
+           	<img src="Img/Funcion.png">
+           	<p class="Parrafo">
+           		Carga inicial. (initial load)
+				Mantenimiento o refresco periódico: inmediato, diario, semanal, mensual... (refreshment)
+				El Almacenamiento intermedio permite:
+				Realizar transformaciones sin paralizar las bases de datos operacionales y el almacén de datos.
+				Almacenar metadatos.
+				Facilitar la integración de fuentes externas.
+				La “calidad de los datos” es la clave del éxito de un almacén de datos.
+				<br><br>
+				Definir una estrategia de calidad:
+				Actuación sobre los sistemas operacionales: modificar las reglas de integridad, 
+				los disparadores y las aplicaciones de los sistemas operacionales.
+				Documentación de las fuentes de datos.
+				Definición de un proceso de transformación.
+				Nombramiento de un responsable de calidad del sistema (Data Quality Manager).
+           	</p>
+           </section>
+           <section class="Item1">
+           	<h2>Extracción.</h2>
+           	<img src="Img/Extraccion.png">
+           	<p class="Parrafo">
+           		Extracción: lectura de datos del sistema operacional.
+				a) durante la carga inicial.
+				b) mantenimiento del DW.
+				Ejecución de la extracción:
+				a) si los datos operacionales están mantenidos en un SGBDR, la extracción de datos se puede reducir a consultas en SQL o rutinas programadas.
+				b) si los datos operacionales están en un sistema propietario (no se conoce el formato de los datos) o en fuentes externas textuales, hipertextuales u hojas de cálculo, la extracción puede ser muy difícil y puede tener que realizarse a partir de informes o volcados de datos proporcionados por los propietarios que deberán ser procesados posteriormente.
+				Extracción: en el mantenimiento/refresco del DW. Antes de realizar la extracción es preciso Identificar los Cambios.
+				Identificación de Cambios.
+				<br><br>
+				Identificar los datos operacionales (relevantes) que han sufrido una modificación desde la fecha del último mantenimiento.
+				Métodos
+				Carga total: cada vez se empieza de cero.
+				Comparación de instancias de la base de datos operacional.
+				Uso de marcas de tiempo (time stamping) en los registros del sistema operacional.
+				Uso de disparadores en el sistema operacional.
+				Uso del fichero de log (gestión de transacciones) del sistema operacional.
+				Uso de técnicas mixtas.
+
+           	</p>		
+           </section>
+           <section class="Item1">
+           	<h2>Transformación.</h2>
+           	<img src="Img/Transformacion.png">
+           	<p class="Parrafo">
+           		Transformar los datos extraídos de las fuentes operacionales: limpieza, estandarización. (cleansing)
+                Calcular los datos derivados: aplicar las leyes de derivación. (integration).
+                <br><br>
+                <img src="Img/Trans1.png">
+                <br><br>
+                En los datos operacionales existen anomalías: desarrollos independientes a lo largo del tiempo, fuentes heterogéneas, …
+				Eliminar anomalías:
+				Limpieza de datos: eliminar datos, corregir y completar datos, eliminar duplicados, ...
+				Estandarización: codificación, formatos, unidades de medida, ...
+				<br><br>
+				<img src="Img/Trans2.png">
+				<br><br>
+				<h2>Transformacion: Creacion de claves</h2>
+				<img src="Img/Trans3.png">
+           	</p>
+           </section>
+           <section class="Item1">
+           	<h2>Carga.</h2>
+           	<p class="Parrafo">
+           		Load. (carga).
+				La fase de Transporte consiste en mover los datos desde las fuentes operacionales o el almacenamiento
+				intermedio hasta el almacén de datos y cargar los datos en las correspondientes estructuras de datos.
+				La carga puede consumir mucho tiempo.
+				<br><br>
+				<img src="Img/Carga.png">
+				<br><br>
+				En la carga inicial del DW se mueven grandes volúmenes de datos.
+				En los mantenimientos periódicos del DW se mueven pequeños volúmenes de datos.
+				La frecuencia del mantenimiento periódico está determinada por el gránulo del DW y los requisitos de los usuarios.
+				<h1>Procesos posteriores a la carga.</h1>
+				<img src="Img/Carga 1.png">
+				<h1>Procesos posteriores a la carga.</h1>
+				<img src="Img/Carga 2.png">
+				<p>
+					(Tomado de: http://carlosproal.com/dw/dw05.html) 
+				</p>
+           	</p>
+           </section>
+       	
+       </section>
+
+       <footer>
+    		<p>
+    			(c) Todos los derechos reservados - LF 2019 <br>
+    			Diseñadp por <a href="mailto:lunariveraluisfernando@gmail.com">mi</a>
+    		</p>
+    	</footer>
+   	
+   </div>
+
+</body>
+</html>
